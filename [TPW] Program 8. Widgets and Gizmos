@@ -1,0 +1,12 @@
+"""An online retailer sells two products: widgets and gizmos. Each widget weighs 75
+grams. Each gizmo weighs 112 grams. Write a program that reads the number of
+widgets and the number of gizmos in an order from the user. Then your program
+should compute and display the total weight of the order."""
+
+number_of_widgets = int(input("Please, write down the number of widgets: "))
+number_of_gizmos = int(input("Please, write down the number of gizmos: "))
+#each widget weighs 75 g and each gizmo weighs 112 g. 
+weight_widgets = number_of_widgets*75
+weight_gizmos = number_of_gizmos*112
+total_weight = weight_widgets + weight_gizmos
+print("The total weight for your order is:",total_weight)
