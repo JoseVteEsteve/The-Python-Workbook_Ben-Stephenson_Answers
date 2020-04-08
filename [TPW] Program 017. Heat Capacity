@@ -1,0 +1,38 @@
+"""The amount of energy required to increase the temperature of one gram of a material
+by one degree Celsius is the material’s specific heat capacity, C. The total amount
+of energy required to raise m grams of a material by ΔT degrees Celsius can be
+computed using the formula:
+
+                               q = mCΔT.
+
+Write a program that reads the mass of some water and the temperature change
+from the user. Your program should display the total amount of energy that must be
+added or removed to achieve the desired temperature change.
+
+Hint: The specific heat capacity of water is 4.186 J g◦C. Because water has a den-
+sity of 1.0 gram per millilitre, you can use grams and millilitres interchangeably
+in this exercise.
+
+Extend your program so that it also computes the cost of heating the water. Elec-
+tricity is normally billed using units of kilowatt hours rather than Joules. In this
+exercise, you should assume that electricity costs 8.9 cents per kilowatt-hour. Use
+your program to compute the cost of boiling water for a cup of coffee."""
+
+mass = float(input("Enter the mass of water in grams: "))
+temperature_change = float(input("Introduce the temperature change in ºC: "))
+total_energy = round(mass*4.186*temperature_change,3)
+print("The total energy to heat {} grams of water with a temperature change of {} ºC is {} Joules".format(mass,temperature_change,total_energy))
+
+#Extension
+#Joules must be changed to kilowatt-per-hour, so that 1 J = 2.77778e-7 Kwh
+
+energy_in_kwh = round(total_energy*0.000000277778,3)
+
+#in the program is assumed that the time for boiling a cup of coffee are 5 minutes = 300 seconds
+#the cost of electricity is calculated by multiplying the energy (in Kwh and transformed to kws) by the cost (in cents) and multiplying
+#the total per 300 s (the assumed time to boil a cup of coffee)
+
+energy_cost = round(energy_in_kwh*8.9/3600*300,5)
+
+print("The cost of energy to boil a cup of coffe is",energy_cost,"cents.")
+
