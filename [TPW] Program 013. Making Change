@@ -1,0 +1,33 @@
+"""Consider the software that runs on a self-checkout machine. One task that it must be
+able to perform is to determine how much change to provide when the shopper pays
+for a purchase with cash.
+Write a program that begins by reading a number of cents from the user as an
+integer. Then your program should compute and display the denominations of the
+coins that should be used to give that amount of change to the shopper. The change
+should be given using as few coins as possible. Assume that the machine is loaded
+with pennies, nickels, dimes, quarters, loonies and toonies."""
+
+#penny = 1 cent
+#nickel = 5 cents
+#dime = 10 cents
+#quarter = 25 cents
+#loony = 1 dollar (100 cents)
+#toony = 2 dollars (200 cents)
+
+#in the program is assumed that there are some coins to return to the user
+cents = int(input("Please, enter the total amount of cents: "))
+toonies = cents//200
+amount_remain = cents%200
+loonies = amount_remain//100
+amount_remain = amount_remain%100
+quarters = amount_remain//25
+amount_remain = amount_remain%25
+dimes = amount_remain//10
+amount_remain = amount_remain%10
+nickels = amount_remain//5
+amount_remain = amount_remain%5
+pennies = amount_remain//1
+amount_remain = amount_remain%1
+
+print("You will give the following coins:\n\t{} toonies\n\t{} loonies\n\t{} quarters\n\t{} 
+dimes\n\t{} nickels\n\t{} pennies".format(toonies,loonies,quarters,dimes,nickels,pennies))
