@@ -1,0 +1,12 @@
+"""Create a program that reads a duration from the user as a number of days, hours,
+minutes, and seconds. Compute and display the total number of seconds represented
+by this duration."""
+
+days_number = int(input("Please, introduce the number of days: "))
+hours_number = int(input("Please, introduce the number of hours: "))
+minutes_number = int(input("Please, introduce the number of minutes: "))
+seconds_number = int(input("Please, introduce the number of seconds: "))
+
+total_seconds = days_number*24*3600 + hours_number*3600 + minutes_number*60 + seconds_number
+
+print("{} days, {} hours, {} minutes and {} seconds are {} seconds.".format(days_number,hours_number,minutes_number,seconds_number,total_seconds))
