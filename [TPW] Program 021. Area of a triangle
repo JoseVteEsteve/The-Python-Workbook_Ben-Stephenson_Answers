@@ -1,0 +1,13 @@
+"""The area of a triangle can be computed using the following formula, where b is the
+length of the base of the triangle, and h is its height:
+    area = b × h/2
+
+Write a program that allows the user to enter values for b and h. The program
+should then compute and display the area of a triangle with base length b and height h."""
+
+length = float(input("Introduce the length of the base of the triangle in meters: "))
+height = float(input("Introduce the height of the triangle in meters: "))
+
+area = round(length*height/2,3)
+
+print("The area of a triangle with {} meters of base and {} meters of height is {} square meters.".format(length,height,area))
