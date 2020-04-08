@@ -1,0 +1,15 @@
+"""In this exercise, you will create a program that begins by reading a measurement
+in feet from the user. Then your program should display the equivalent distance in
+inches, yards and miles. Use the Internet to look up the necessary conversion factors
+if you don’t have them memorized."""
+
+#1 foot are 12 inches
+#1 foot are 1/3 yards
+#1 foot are 0.000189394 miles
+
+feet = int(input("Please, introduce a distance measured in feet: "))
+inches = feet*12
+yards = round(feet*1/3,3)
+miles = round(feet*0.000189394,3)
+
+print("The distance {} expressed in feet is \n\t{} inches\n\t{} yards and\n\t{} miles".format(feet,inches, yards, miles))
