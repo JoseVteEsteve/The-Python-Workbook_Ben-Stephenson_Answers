@@ -1,0 +1,16 @@
+"""Pretend that you have just opened a new savings account that earns 4 percent interest
+per year. The interest that you earn is paid at the end of the year, and is added
+to the balance of the savings account. Write a program that begins by reading the
+amount of money deposited into the account from the user. Then your program should
+compute and display the amount in the savings account after 1, 2, and 3 years. Display
+each amount so that it is rounded to 2 decimal places."""
+
+deposited_money = float(input("Please, introduce the current balance of your savings account: "))
+interest = 0.04 #becausee the interest is 4%
+after_one_year = round(deposited_money*interest,2)
+after_two_years = round(after_one_year*interest,2)
+after_three_years = round(after_two_years*interest,2)
+
+print("After one year, your savings account will have:",after_one_year,"€.")
+print("After two years, your savings account will have:",after_two_years,"€.")
+print("After three years, your savings account will have:",after_three_years,"€.")
