@@ -1,0 +1,12 @@
+"""Write a program that begins by reading a radius, r, from the user. The program will
+continue by computing and displaying the area of a circle with radius r and the
+volume of a sphere with radius r. Use the pi constant in the math module in your
+calculations."""
+
+#math library is imported to import pi constant
+import math
+radius = float(input("Introduce the radius of a circle in meters: "))
+area = round(4*math.pi*radius**2,3)
+volume = round(4/3*math.pi*radius**3,3)
+
+print("A circle with a radius of {} meters has an area of {} square meters and a volume of {} cubic meters".format(radius,area,volume))
