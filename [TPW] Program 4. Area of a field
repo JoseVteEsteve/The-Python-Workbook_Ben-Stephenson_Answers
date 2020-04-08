@@ -1,0 +1,10 @@
+"""Create a program that reads the length and width of a farmer’s field from the user in
+feet. Display the area of the field in acres.
+Hint: There are 43,560 square feet in an acre."""
+
+field_length = float(input("Please, introduce the length of the field in feets: "))
+field_width = float(input("Please, introduce the width of the field in feets: "))
+area_in_feets = field_length*field_width
+area_in_acres = area_in_feets/43560
+print("The total area of the field in acres is",area_in_acres,"acres")
+
