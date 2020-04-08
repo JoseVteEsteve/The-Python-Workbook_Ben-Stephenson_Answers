@@ -1,0 +1,12 @@
+"""The volume of a cylinder can be computed by multiplying the area of its circular
+base by its height. Write a program that reads the radius of the cylinder, along with
+its height, from the user and computes its volume. Display the result rounded to one
+decimal place."""
+
+import math
+#math library is imported because will be used to import the constant Pi
+radius = float(input("Please, introduce the radius of the cylinder's base in meters: "))
+height = float(input("Please, introduce the height of the cylinder in meters: "))
+base_area = math.pi*radius**2
+volume = round(base_area*height,3)
+print("The volume of a cylinder with {} meters of radius and {} meters of height is {} cubic meters".format(radius,height,volume))
