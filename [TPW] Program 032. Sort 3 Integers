@@ -1,0 +1,20 @@
+"""Create a program that reads three integers from the user and displays them in sorted
+order (from smallest to largest). Use the min and max functions to find the smallest
+and largest values. The middle value can be found by computing the sum of all three
+values, and then subtracting the minimum value and the maximum value."""
+
+#reading three integer numbers
+
+number1 = int(input("Enter a whole number: "))
+number2 = int(input("Enter another whole number: "))
+number3 = int(input("Enter the last whole number: "))
+
+#computing the minimun and maximum value
+smallest = min(number1,number2,number3)
+largest = max(number1,number2,number3)
+
+#computing the middle value
+sum = number1 + number2 + number3
+middle = sum - smallest - largest
+
+print("The smallest number is {}, the middle number is {} and the largest number is {}.".format(smallest, middle, largest))
