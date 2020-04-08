@@ -1,0 +1,13 @@
+"""Write a program that begins by reading a temperature from the user in degrees
+Celsius. Then your program should display the equivalent temperature in degrees
+Fahrenheit and degrees Kelvin. The calculations needed to convert between different
+units of temperature can be found on the internet."""
+
+#K = C + 273.15
+#F = 9/5C + 32
+
+temperature_celsius = float(input("Introduce the temperature in Celsius: "))
+temperature_kelvin = temperature_celsius + 273.15
+temperature_fahrenheit = round(9/5*temperature_celsius + 32,3)
+
+print("{} ºC are {} ºK and {}ºF.".format(temperature_celsius,temperature_kelvin,temperature_fahrenheit))
