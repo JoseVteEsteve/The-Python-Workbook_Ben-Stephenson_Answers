@@ -1,0 +1,14 @@
+"""Many people think about their height in feet and inches, even in some countries that
+primarily use the metric system. Write a program that reads a number of feet from
+the user, followed by a number of inches. Once these values are read, your program
+should compute and display the equivalent number of centimeters.
+Hint: One foot is 12 inches. One inch is 2.54 centimeters."""
+
+print("In this program, you must enter your height in feets followed by a number of inches\n")
+number_of_feet = int(input("Please, introduce your height in feets: "))
+number_of_inches = int(input("Please, now, introduce your height in inches: "))
+
+total_inches = number_of_feet*12 + number_of_inches
+number_of_centimeters = round(number_of_inches*2.54,2)
+
+print("Your height in centimeters is",number_of_centimeters,"centimeters")
