@@ -1,0 +1,20 @@
+"""Write a program that computes the body mass index (BMI) of an individual. Your
+program should begin by reading a height and weight from the user. Then it should
+use one of the following two formulas to compute the BMI before displaying it. If
+you read the height in inches and the weight in pounds then body mass index is
+computed using the following formula:
+BMI = weight× 703/(height × height).
+
+If you read the height in meters and the weight in kilograms then body mass index
+is computed using this slightly simpler formula:
+BMI = weight/(height × height)."""
+
+#the program will be done using meters and kilograms
+
+weight = float(input("Please, enter your weight in kilograms: "))
+height = float(input("Please, enter your height in meters: "))
+
+body_mass_index = round(weight/height**2,3)
+
+print("The body mass index of a person with {} kg of weight and {} meters of height is {} kg/m^2.".format(weight,height,body_mass_index))
+
