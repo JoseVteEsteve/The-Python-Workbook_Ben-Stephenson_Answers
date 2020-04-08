@@ -1,0 +1,12 @@
+"""In the United States, fuel efficiency for vehicles is normally expressed in miles-per-gallon (MPG). 
+In Canada, fuel efficiency is normally expressed in liters-per-hundred kilometers (L/100 km). 
+Use your research skills to determine how to convert from
+MPG to L/100 km. Then create a program that reads a value from the user 
+in American units and displays the equivalent fuel efficiency in Canadian units."""
+
+#American units are MPG
+#1 MPG are 235.215 L/100 km
+
+mpg = float(input("Please, enter the miles-per-gallon (MPG) of your car: "))
+litres_per_100_km = round(mpg/235.215,3)
+print("{} milles per gallon are {} litres per 100 km".format(mpg,litres_per_100_km))
