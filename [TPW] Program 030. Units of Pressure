@@ -1,0 +1,16 @@
+"""In this exercise you will create a program that reads a pressure from the user in kilopascals. 
+Once the pressure has been read your program should report the equivalent
+pressure in pounds per square inch, millimeters of mercury and atmospheres. Use
+your research skills to determine the conversion factors between these units."""
+
+#1 KPa = 0.145038 pounds per inch (psi)
+#1 KPa = 7.50063039159151 mmHg (torr)
+#1 Kpa = 0.0098692505136935559928 atm
+
+pressure_kilopascals = int(input("Introduce the pressure in kilopascals: "))
+pressure_poundsperinch = round(pressure_kilopascals*0.145038,3)
+pressure_mmHg = round(pressure_kilopascals*7.50063039159151,3)
+pressure_atm = round(pressure_kilopascals*0.0098692505136935559928,3)
+
+print("{} Kpa are \n\t{} psi, \n\t{} mmHg and \n\t{} atms.".format(pressure_kilopascals, pressure_poundsperinch,pressure_mmHg, pressure_atm))
+
