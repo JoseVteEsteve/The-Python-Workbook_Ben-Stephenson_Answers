@@ -1,0 +1,51 @@
+"""The horoscopes commonly reported in newspapers use the position of the sun at the
+time of one’s birth to try and predict the future. This system of astrology divides the
+year into twelve zodiac signs, as outline in the table below:
+
+Zodiac sign         Date range
+Capricorn         December 22 to January 19
+Aquarius          January 20 to February 18
+Pisces            February 19 to March 20
+Aries             March 21 to April 19
+Taurus            April 20 to May 20
+Gemini            May 21 to June 20
+Cancer            June 21 to July 22
+Leo               July 23 to August 22
+Virgo             August 23 to September 22
+Libra             September 23 to October 22
+Scorpio           October 23 to November 21
+Sagittarius       November 22 to December 21
+
+Write a program that asks the user to enter his or her month and day of birth. Then
+your program should report the user’s zodiac sign as part of an appropriate output
+message."""
+
+day = int(input("Please, enter your day of birth: "))
+month = input("Please, introduce your month of birth: ")
+
+if ((day >= 22 and day <= 31) and month == "December") or (month == "January" and day <= 19):
+	print("Your zodiac sign is Capricorn.")
+elif ((day >= 20 and day <= 31) and month == "January") or (day <= 18 and month == "February"):
+	print("Your zodiac sign is Aquarius")
+elif ((day >= 19 and day <= 29) and month == "February") or (day <= 20 and month == "March"):
+	print("Your zodiac sign is Pisces")
+elif ((day >= 21 and day <= 31) and month == "March") or (day <= 19 and month == "April"):
+	print("Your zodiac sign is Aries")
+elif ((day >= 20 and day <= 30) and month == "April") or (day <= 20 and month == "May"):
+	print("Your zodiac sign is Taurus")
+elif ((day >= 21 and day <= 31) and month == "May") or (day <= 20 and month == "June"):
+	print("Your zodiac sign is Gemini")
+elif ((day >= 21 and day <= 31) and month == "June") or (day <= 22 and month == "July"):
+	print("Your zodiac sign is Cancer")
+elif ((day >= 22 and day <= 31) and month == "July") or (day <= 22 and month == "August"):
+	print("Your zodiac sign is Leo")
+elif ((day >= 23 and day <= 31) and month == "August") or (day <= 22 and month == "September"):
+	print("Your zodiac sign is Virgo")
+elif ((day >= 23 and day <= 31) and month == "September") or (day <= 22 and month == "October"):
+	print("Your zodiac sign is Libra")
+elif ((day >= 23 and day <= 31) and month == "October") or (day <= 21 and month == "November"):
+	print("Your zodiac sign is Scorpio")
+elif ((day >= 22 and day <= 31) and month == "November") or (day <= 21 and month == "December"):
+	print("Your zodiac sign is Sagittarius")
+else:
+	print("The date is incorrect")
