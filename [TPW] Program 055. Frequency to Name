@@ -1,0 +1,35 @@
+"""Electromagnetic radiation can be classified into one of 7 categories according to its
+frequency, as shown in the table below:
+
+Name 							Frequency range (Hz)
+Radio waves 			Less than 3 × 109
+Microwaves 				3 × 109 to less than 3 × 1012
+Infrared light 		3 × 1012 to less than 4.3 × 1014
+Visible light 		4.3 × 1014 to less than 7.5 × 1014
+Ultraviolet light 7.5 × 1014 to less than 3 × 1017
+X-rays 						3 × 1017 to less than 3 × 1019
+Gamma rays 				3 × 1019 or more
+
+Write a program that reads the frequency of the radiation from the user and displays
+the appropriate name.
+"""
+
+frequency = float(input("Introduce the frequency of the radiation: "))
+if frequency >= 3e19:
+	name = "Gamma rays"
+elif frequency >= 3e17:
+	name = "X-rays"
+elif frequency >= 7.5e14:
+	name = "Ultraviolet Light"
+elif frequency >= 4.3e14:
+	name = "Visible Light"
+elif frequency >= 3e12:
+	name = "Infrared Light"
+elif frequency >= 3e9:
+	name = "Microwaves"
+elif frequency >= 3e3:
+	name = "Radio waves"
+else:
+	name = "out"
+
+print("The frequency {} Hz corresponds to the section {} of the Electromagnetic Radiation".format(frequency,name))
