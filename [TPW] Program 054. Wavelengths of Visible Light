@@ -1,0 +1,34 @@
+"""The wavelength of visible light ranges from 380 to 750 nanometers (nm). While the
+spectrum is continuous, it is often divided into 6 colors as shown below:
+
+Exercise 54:Wavelengths of Visible Light 25
+
+Color 		Wavelength (nm)
+Violet 		380 to less than 450
+Blue 			450 to less than 495
+Green 		495 to less than 570
+Yellow 		570 to less than 590
+Orange 		590 to less than 620
+Red 			620 to 750
+
+Write a program that reads a wavelength from the user and reports its color. Display
+an appropriate error message if the wavelength entered by the user is outside of the
+visible spectrum."""
+
+wavelength = int(input("Introduce the wavelength value: "))
+if wavelength >= 380:
+	if wavelength < 450:
+		colour = "Violet"
+	elif wavelength < 495:
+		colour = "Blue"
+	elif wavelength < 570:
+		colour = "Green"
+	elif wavelength < 590:
+		colour = "Yellow"
+	elif wavelength < 620:
+		colour = "Orange"
+	elif wavelength < 750:
+		colour = "Red"
+	print("The colour of the wavelength value is",colour)
+else:
+	print("The value entered is not valid")
