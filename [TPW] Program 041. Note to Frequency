@@ -27,3 +27,59 @@ the octave number separately. Once you have separated the parts, compute the
 frequency of the note in the fourth octave using the data in the table above.
 Then divide the frequency by 24−x , where x is the octave number entered by
 the user. This will halve or double the frequency the correct number of times."""
+
+#upper is used to convert the string in uppercase
+note = input("Please, introduce the name of the note: ").upper()
+if note == "C4":
+	print("The frequency is 261.63 Hz.")
+elif note == "D4":
+	print("The frequency is 293.66 Hz. ")
+elif note == "E4":
+	print("The frequency is 329.63 Hz. ")
+elif note == "F4":
+	print("The frequency is 349.23 Hz. ")
+elif note == "G4":
+	print("The frequency is 392.00 Hz. ")
+elif note == "A4":
+	print("The frequency is 440.00 Hz. ")
+elif note == "B4":
+	print("The frequency is 493.88 Hz. ")
+else: 
+	print("The note is not a valid note. ")
+
+#EXTENSION. Working out the frequencies for C0 to C8
+name = note[0]
+octave = int(note[1])
+
+c4_frequency = 261.63
+#to calculate the new frequency for octaves from 0 to 8 in the note C, the formula is 
+#new_frequency = C4_frequency/(2**(4-octave))
+#this code would be shorter by using a function or a loop
+octave = 0
+c0_frequency = c4_frequency/2**(4-octave)
+print("The frequency for note C{} is {} Hz.".format(octave,c0_frequency))
+octave = 1
+c0_frequency = c4_frequency/2**(4-octave)
+print("The frequency for note C{} is {} Hz.".format(octave,c0_frequency))
+octave = 2
+c0_frequency = c4_frequency/2**(4-octave)
+print("The frequency for note C{} is {} Hz.".format(octave,c0_frequency))
+octave = 3
+c0_frequency = c4_frequency/2**(4-octave)
+print("The frequency for note C{} is {} Hz.".format(octave,c0_frequency))
+octave = 4
+c0_frequency = c4_frequency/2**(4-octave)
+print("The frequency for note C{} is {} Hz.".format(octave,c0_frequency))
+octave = 5
+c0_frequency = c4_frequency/2**(4-octave)
+print("The frequency for note C{} is {} Hz.".format(octave,c0_frequency))
+octave = 6
+c0_frequency = c4_frequency/2**(4-octave)
+print("The frequency for note C{} is {} Hz.".format(octave,c0_frequency))
+octave = 7
+c0_frequency = c4_frequency/2**(4-octave)
+print("The frequency for note C{} is {} Hz.".format(octave,c0_frequency))
+octave = 8
+c0_frequency = c4_frequency/2**(4-octave)
+print("The frequency for note C{} is {} Hz.".format(octave,c0_frequency))
+
