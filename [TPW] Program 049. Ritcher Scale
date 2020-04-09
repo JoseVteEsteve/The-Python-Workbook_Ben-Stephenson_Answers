@@ -1,0 +1,41 @@
+"""The following table contains earthquake magnitude ranges on the Richter scale and
+their descriptors:
+
+Magnitude 								Descriptor
+Less than 2.0 						Micro
+2.0 to less than 3.0 			Very minor
+3.0 to less than 4.0 			Minor
+4.0 to less than 5.0 			Light
+5.0 to less than 6.0 			Moderate
+6.0 to less than 7.0 			Strong
+7.0 to less than 8.0 			Major
+8.0 to less than 10.0 		Great
+10.0 or more 							Meteoric
+
+Write a program that reads a magnitude from the user and displays the appropriate
+descriptor as part of a meaningful message. For example, if the user enters 5.5 then
+your program should indicate that a magnitude 5.5 earthquake is considered to be a
+moderate earthquake."""
+
+magnitude = float(input("Please, enter the earthquake magnitude: "))
+
+if magnitude >= 10:
+	print("The magnitude {} is considered to be a Meteoric earthquake.".format(magnitude))
+elif magnitude >= 8:
+	print("The magnitude {} is considered to be a Great earthquake.".format(magnitude))
+elif magnitude >= 7:
+	print("The magnitude {} is considered to be a Major earthquake.".format(magnitude))
+elif magnitude >= 6:
+	print("The magnitude {} is considered to be a Strong earthquake.".format(magnitude))
+elif magnitude >= 5:
+	print("The magnitude {} is considered to be a Moderate earthquake.".format(magnitude))
+elif magnitude >= 4:
+	print("The magnitude {} is considered to be a Light earthquake.".format(magnitude))
+elif magnitude >= 3:
+	print("The magnitude {} is considered to be a Minor earthquake.".format(magnitude))
+elif magnitude >= 2:
+	print("The magnitude {} is considered to be a Very Minor earthquake.".format(magnitude))
+elif magnitude >= 0:
+	print("The magnitude {} is considered to be a Micro earthquake.".format(magnitude))
+else:
+	print("The magnitude is out of range. ")
