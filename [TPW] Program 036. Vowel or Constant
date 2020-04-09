@@ -1,0 +1,14 @@
+"""In this exercise you will create a program that reads a letter of the alphabet from the
+user. If the user enters a, e, i, o or u then your program should display a message
+indicating that the entered letter is a vowel. If the user enters y then your program
+should display a message indicating that sometimes y is a vowel, and sometimes y is
+a consonant. Otherwise your program should display a message indicating that the
+letter is a consonant."""
+
+vowel = input("Please, enter a letter of the alphabet (in lowercase): ")
+if vowel == 'a' or vowel == 'e' or vowel == 'i' or vowel == 'o' or vowel == 'u':
+	print("The entered letter is a vowel.")
+elif vowel == 'y':
+	print("y sometines is a vowel and sometimes is a constant.")
+else:
+	print("The entered letter is a consonant.")
