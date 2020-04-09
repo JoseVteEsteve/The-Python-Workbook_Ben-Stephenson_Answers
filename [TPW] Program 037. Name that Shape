@@ -1,0 +1,26 @@
+"""Write a program that determines the name of a shape from its number of sides. Read
+the number of sides from the user and then report the appropriate name as part of
+a meaningful message. Your program should support shapes with anywhere from 3
+up to (and including) 10 sides. If a number of sides outside of this range is entered
+then your program should display an appropriate error message."""
+
+number_of_sides = int(input("Introduce the number of sides of the shape: "))
+if number_of_sides >= 3 and number_of_sides <= 10:
+	if number_of_sides == 3:
+		print("The shape is a triangle. ")
+	elif number_of_sides == 4:
+		print("The shape is a cuadrilater. ")
+	elif number_of_sides == 5:
+		print("The shape is a pentagon. ")
+	elif number_of_sides == 6:
+		print("The shape is a hexagon. ")
+	elif number_of_sides == 7:
+		print("The shape is a heptagon. ")
+	elif number_of_sides == 8:
+		print("The shape is an octogon. ")
+	elif number_of_sides == 9:
+		print("The shape is a nonagon. ")
+	elif number_of_sides == 10:
+		print("The shape is a decagon. ")
+else:
+	print("Error. The shape has less than 3 or more than 10 sides. ")
