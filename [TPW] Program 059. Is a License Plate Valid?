@@ -1,0 +1,20 @@
+"""In a particular jurisdiction, older license plates consist of three uppercase letters
+followed by three numbers. When all of the license plates following that pattern had been used, the format was changed to four numbers followed by three uppercase
+letters.
+Write a program that begins by reading a string of characters from the user. Then
+your program should display a message indicating whether the characters are valid
+for an older style license plate or a newer style license plate. Your program should
+display an appropriate message if the string entered by the user is not valid for either
+style of license plate."""
+
+uppercase = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
+numbers = ['0','1','2','3','4','5','6','7','8','9']
+
+plate = input("Enter a plate number: ")
+if (plate[0] in uppercase) and (plate[1] in uppercase) and (plate[2] in uppercase) and (plate[3] in numbers) and (plate[4] in numbers) and (plate[5] in numbers) == True:
+	print("Is an older style license plate.")
+elif (plate[0] in numbers) and (plate[1] in numbers) and (plate[2] in numbers) and (plate[3] in numbers) and (plate[4] in uppercase) and (plate[5] in uppercase) and(plate[6] in uppercase) == True:
+	print("Is a newer style license plate.")
+else:
+	print("Is not a valid license plate.")
+
